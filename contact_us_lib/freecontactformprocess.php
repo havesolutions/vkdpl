@@ -35,8 +35,7 @@ if(isset($_POST['Email_Address'])) {
 	if(!isset($_POST['Full_Name']) ||
 		!isset($_POST['Email_Address']) ||
 		!isset($_POST['Telephone_Number']) ||
-		!isset($_POST['Your_Message']) || 
-		!isset($_POST['AntiSpam'])		
+		!isset($_POST['Your_Message'])
 		) {
 		died('Sorry, there appears to be a problem with your form submission.');		
 	}
