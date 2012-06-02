@@ -22,7 +22,7 @@
 
 if(isset($_POST['Email_Address'])) {
 	
-	include 'freecontactformsettings.php';
+	include 'contact_us_lib/freecontactformsettings.php';
 	
 	function died($error) {
 		echo "Sorry, but there were error(s) found with the form you submitted. ";

@@ -7,6 +7,12 @@
 <meta name="description" content="Eco Green | Contact Page | free CSS template by templatemo.com" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script src="contact_us_lib/freecontactformvalidation.js"></script>
+<script>
+required.add('Full_Name','NOT_EMPTY','Full Name');
+required.add('Email_Address','EMAIL','Email Address');
+required.add('Your_Message','NOT_EMPTY','Your Message');
+</script>
+
 </head>
 <body>
 
@@ -67,7 +73,7 @@
 
                     <h6>Contact Form</h6><br>
 
-                    <form method="post" name="freecontactform" action="contact_us_lib/freecontactformprocess.php">
+                    <form method="post" name="freecontactform" action="contact_us_lib/freecontactformprocess.php" onsubmit="return validate.check(this)">
 
                         <input type="hidden" name="post" value="Send" />
                         <label for="author">Name:</label> <input type="text" name="Full_Name" id="Full_Name" class="required input_field" />
