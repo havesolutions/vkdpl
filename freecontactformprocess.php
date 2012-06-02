@@ -59,9 +59,9 @@ if(isset($_POST['Email_Address'])) {
   	$error_message .= 'The Comments you entered do not appear to be valid.<br />';
   }
   
-  if($antispam <> $antispam_answer) {
-	$error_message .= 'The Anti-Spam answer you entered is not correct.<br />';
-  }
+ //  if($antispam <> $antispam_answer) {
+	// $error_message .= 'The Anti-Spam answer you entered is not correct.<br />';
+ //  }
   
   if(strlen($error_message) > 0) {
   	died($error_message);
