@@ -45,7 +45,7 @@ if(isset($_POST['Email_Address'])) {
 	$email_from = $_POST['Email_Address']; // required
 	$telephone = $_POST['Telephone_Number']; // not required
 	$comments = $_POST['Your_Message']; // required
-	$antispam = $_POST['AntiSpam']; // required
+	// $antispam = $_POST['AntiSpam']; // required
 	
 	$error_message = "";
 	
